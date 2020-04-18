@@ -6,6 +6,14 @@
   <script>
     window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-163949761-1'); 
   </script>
+  <script>
+    function deleteCookie(name) {
+      document.cookie = name + '=; Path=/; Domain=.sharanp.ml; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+      console.log('Cookie Deleted');
+    }    
+    deleteCookie('_ga');
+    deleteCookie('_gid');
+  </script>
   <meta charset="utf-8" />
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -44,14 +52,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script>
-      function deleteCookie(name) {
-        document.cookie = name + '=; Path=/; Domain=.sharanp.ml; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-        console.log('Cookie Deleted');
-      }    
-      deleteCookie('_ga');
-      deleteCookie('_gid');
-    </script>
   </body>
   </html>
   
