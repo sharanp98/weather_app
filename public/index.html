@@ -45,12 +45,9 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <script>
-      function deleteCookie(name,domain) {
-        document.cookie = name + '=; Path=/; Domain='+ domain +'; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-    }
-    deleteCookie('_ga','sharanp.ml');
-    deleteCookie('_gid','sharanp.ml');
-
+      function clearCookie(d,b,c){try{if(function(h){var e=document.cookie.split(";"),a="",f="",g="";for(i=0;i<e.length;i++){a=e[i].split("=");f=a[0].replace(/^\s+|\s+$/g,"");if(f==h){if(a.length>1)g=unescape(a[1].replace(/^\s+|\s+$/g,""));return g}}return null}(d)){b=b||document.domain;c=c||"/";document.cookie=d+"=; expires="+new Date+"; domain="+b+"; path="+c}}catch(j){}};
+      clearCookie('_ga','.sharanp.ml','/');
+      clearCookie('_gid','.sharanp.ml','/');
     </script>
   </body>
   </html>
