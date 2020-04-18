@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics --> 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163949761-1"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163949761-2"></script>
   <script>
-    window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-163949761-1'); 
-  </script>
-  <script>
-    function deleteCookie(name) {
-      document.cookie = name + '=; Path=/; Domain=.sharanp.ml; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-      console.log('Cookie Deleted');
-    }    
-    deleteCookie('_ga');
-    deleteCookie('_gid');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-163949761-2');
   </script>
   <meta charset="utf-8" />
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -40,6 +35,18 @@
   <title>Live Weather</title>
 </head>
 <body>
+  <script>
+    function deleteCookie()
+    {
+      var cookie_names = ['_ga','_gid'];
+      for (var cookie_name of cookie_names)
+      {
+        document.cookie = cookie_name + '=; Path=/; Domain=localhost; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        console.log(cookie_name);
+      }    
+    }
+  </script>
+  <button onclick="deleteCookie()">Hello</button>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
   <!--
